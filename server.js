@@ -5,7 +5,7 @@ const { v4: uuidv4 } = require('uuid');
 
 const app = express();
 app.use(express.json());
-const PORT = 3001;
+const PORT = process.env.PORT || 3000;
 
 const DB_FILE = '/db/db.json'
 
